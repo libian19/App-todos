@@ -1,0 +1,19 @@
+button {
+  background-color: rgb(223 36 119);
+  box-shadow:0 5px 25px rgba(97,218,250,.5);
+  border:none;
+  border-radius:15px;
+  cursor:pointer;
+  font-size: 18px;
+  font-weight:400;
+  color:#fafafa;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:180px;
+  height: 50px;
+  margin: 60px auto;
+}
+button:hover{
+  transform:scale(1.1);
+}

@@ -1,0 +1,18 @@
+input {
+  width: 500px;
+  margin: 15px auto;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  box-shadow:0 5px 25px rgba(97,218,250,.5);
+}
+input::placeholder{
+  color: #a5a5a5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+input:focus {
+  outline-color: rgb(23 112 162);
+}

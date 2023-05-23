@@ -1,13 +1,16 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-image: url('https://img.freepik.com/vector-gratis/diseno-futurista-fondo_23-2148503793.jpg?w=900&t=st=1684622132~exp=1684622732~hmac=ead5650c23c7503d6a1950d9141d03b4b89751d4318856c6708c8bd597ae6ca7');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  text-align: center;
+  position: relative;
+  width: inherit;
+  min-height: 100vh;
 }

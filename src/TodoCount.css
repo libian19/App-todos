@@ -1,0 +1,9 @@
+.contador {
+  color: rgb(223 36 119);
+  font-size: 32px;
+  text-align: center;
+  padding: 32px;
+}
+.contador span {
+  font-weight: bold;
+}
