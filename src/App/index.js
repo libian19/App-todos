@@ -1,33 +1,24 @@
 import React from 'react';
-import { TodoCount } from './TodoCount';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { TodoMsj } from './TodoMsj';
-import { CreateTodoButon } from './CreateTodoButon';
-
-/*const defTodos = [
+import { TodoCount } from '../TodoCount';
+import { TodoSearch } from '../TodoSearch/index';
+import { TodoList } from '../TodoList';
+import { TodoItem } from '../TodoItem';
+import { TodoMsj } from '../TodoMsj';
+import { CreateTodoButon } from '../CreateTodoButon';
+import { useLocalStorage } from './useLocalStorage';
+/*
+const defTodos = [
   {text: 'Estudiar programación', completed: true},
   {text: 'Hacer las compras', completed: true},
   {text: 'Hacer los quehaceres de la casa', completed: false},
   {text: 'Ir a caminar 1 hora', completed: false}
 ];
-localStorage.setItem('TODOS_V1', JSON.stringify(defTodos));
+localStorage.setItem('itemName', JSON.stringify(defTodos));
 */
 
-
 function App() {
-  const localStorageTodos = localStorage.getItem('TODOS_V1');
-  let parsedTodos;
-
-  if(!localStorageTodos){
-    localStorage.setItem('TODOS_V1', JSON.stringify([]));
-    parsedTodos = [];
-  }else{
-    parsedTodos = JSON.parse(localStorageTodos)
-  }
-
-  const [todos, setTodos]= React.useState(parsedTodos);
+ 
+  const [todos, saveTodos]= useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue]= React.useState(''); 
   
   const todosCompleted = todos.filter( 
@@ -42,11 +33,6 @@ function App() {
       return todoText.includes(searchText);
     }
   ); 
-
-  const saveTodos = (newTodos) => {
-    localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-    setTodos(newTodos)
-  }
 
   const completeTodo = (text) => {
     const newTodos = [...todos];
@@ -65,8 +51,7 @@ function App() {
     newTodos.splice(todoIndex,1);
     saveTodos(newTodos);
   }
-  
-  
+    
   return (
     <>
       <TodoCount 
@@ -94,7 +79,7 @@ function App() {
       <TodoMsj
         completed={todosCompleted} 
         total={todosTotal} 
-        parsedTodos={parsedTodos}
+        //parsedTodos={item}
       >
       </TodoMsj>
 
