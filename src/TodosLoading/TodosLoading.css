@@ -1,0 +1,14 @@
+.loading {
+  width: 100px;
+  fill: white;
+  animation: girar 1s infinite;  
+}
+
+@keyframes girar{
+  0%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
