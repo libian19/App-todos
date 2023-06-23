@@ -1,0 +1,44 @@
+form {
+  width: 90%;
+  max-width: 300px;
+  height: 200px;
+  background-color: rgb(175, 159, 159);
+  border-radius: 15px;
+  text-align: center;
+  padding: 12px;
+}
+
+label {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 32px;
+}
+textarea {
+  width: 220px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 12px;
+  border-radius: 15px;
+  border: 2px solid #202329
+}
+.TodoForm-button {
+  width: 88px;
+  height: 32px;
+  margin: 16px 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.TodoForm-button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(97,218,250,.5);
+}
+
+.TodoForm-button-cancel {
+  background-color: white
+}
+.TodoForm-button-add{
+  background-color: rgb(228 134 223)
+}

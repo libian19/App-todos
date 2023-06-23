@@ -1,4 +1,4 @@
-button {
+.CreateTodoButon {
   background-color: rgb(223 36 119);
   box-shadow:0 5px 25px rgba(97,218,250,.5);
   border:none;
@@ -13,7 +13,8 @@ button {
   width:180px;
   height: 50px;
   margin: 60px auto;
+  z-index: 1;
 }
-button:hover{
+.CreateTodoButon:hover{
   transform:scale(1.1);
 }
