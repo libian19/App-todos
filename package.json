@@ -31,7 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "htts://libian19.github.io/App-todos",
+  "homepage": "https://libian19.github.io/App-todos",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
