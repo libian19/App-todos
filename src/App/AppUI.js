@@ -4,8 +4,8 @@ import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
-//import { TodosError } from '../TodosError';
-//import { EmptyTodos } from '../EmptyTodos';
+import { TodosError } from '../TodoError';
+import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButon } from '../CreateTodoButon';
 import { Modal } from '../Modal';
 import { TodoForm } from '../TodoForm';
@@ -33,10 +33,12 @@ function AppUI() {
             <TodosLoading /> 
           </>
         )}
-        {/*
-         {error && <TodosError/>}
-         {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
-         */}
+        
+        {error && <TodosError/>}
+        
+        {(!loading &&
+          searchedTodos.length === 0) && <EmptyTodos />}
+        
          {searchedTodos.map(todo => (
           <TodoItem
             key={todo.text}
@@ -55,8 +57,7 @@ function AppUI() {
       
       {openModal && (
         <Modal>
-          <TodoForm>
-          </TodoForm>
+          <TodoForm />
         </Modal>
       )}
       
