@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/App-todos/static/css/main.5e8716ec.css",
+    "main.js": "/App-todos/static/js/main.48bac642.js",
+    "static/media/cargando.svg": "/App-todos/static/media/cargando.4f5468f1da47590207b1bcf77458094f.svg",
+    "index.html": "/App-todos/index.html",
+    "static/media/delete.svg": "/App-todos/static/media/delete.d9c7e0eeb3f573572e1521b7b69ed33e.svg",
+    "static/media/check.svg": "/App-todos/static/media/check.af03c9a6a0411e40578874e6f00e807b.svg",
+    "main.5e8716ec.css.map": "/App-todos/static/css/main.5e8716ec.css.map",
+    "main.48bac642.js.map": "/App-todos/static/js/main.48bac642.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e8716ec.css",
+    "static/js/main.48bac642.js"
+  ]
+}
